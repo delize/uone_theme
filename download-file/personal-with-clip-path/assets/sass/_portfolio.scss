@@ -1,0 +1,74 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         PORTFOLIO
+-------------------------*/
+.portfolio{
+    .portfolio-filter{
+        li a{
+            color: $dark;
+            border-radius: $rd-r;
+            display: block;
+            padding: 5px 15px;
+            transition: all 0.3s;
+        }
+        a.active{
+            background-color: $bg-base-color !important;
+            color: $white;
+        }
+        a:hover{
+            background-color: #d23e50;
+            color: $white;
+        }
+    }
+    .portfolio-item{
+        margin-top: 30px;
+        img{
+            width: 100%;
+        }
+    }
+    .portfolio-item-content{
+        position: relative;
+        border: 7px solid $white;
+        border-radius: $rd-r;
+        &:hover{
+            .img-overlay-content{
+                opacity: 1;
+            }
+            &::before{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        &::before {
+            @include portfolio-before;
+        }
+    }
+    .img-overlay-content{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        opacity: 0;
+        transition: all .5s ease;
+    }
+    .portfolio-icon a{
+        background-color: $dark-1;
+        width: 35px;
+        height: 35px;
+        line-height: 37px;
+        margin: 0 8px;
+        display: inline-block;
+        color: $white;
+        border-radius: $rd-4;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: $bg-base-color;
+        }
+        i{
+            font-size: 18px;
+            font-weight: $f-w-700;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          BLOG
+-------------------------*/
+.blog{
+    .image-blog{
+        img{
+            width: 100%;
+        }
+    }
+    .blog-item{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .blog-link a:hover{
+        color: $dark-1 !important;
+    }
+}

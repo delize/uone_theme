@@ -1,0 +1,80 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         RESUME
+-------------------------*/
+.resume{
+    ul{
+        li{
+            border: 1px solid $light-6;
+            border-radius: $rd-r;
+        }
+    }
+    ul.timeline{
+        list-style-type: none;
+        position: relative;
+        &:before {
+            @include timeline-before;
+        }
+        > li{
+            margin: 20px 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            &:before{
+                @include time-line-before;
+            }
+        }
+        .timeline-title{
+            padding: 30px 20px;
+            &:before{
+                @include timeline-title-before;
+            }
+        }
+        .timeline-date{
+            width: 40%;
+            > span{
+                font-family: $poppins;
+                font-weight: $f-w-500;
+                font-size: $f-s-18;
+                display: block;
+            }
+        }
+        .timeline-company{
+            position: absolute;
+            bottom: 30px;
+            font-family: $poppins;
+            font-weight: $f-w-500;
+            font-size: $f-s-18;
+            margin-bottom: 0;
+            > span{
+                font-family: $muli;
+                font-weight: $f-w-400;
+                font-size: $f-s-16;
+            }
+        }
+        .timeline-duration{
+            color: $white;
+            font-size: $f-s-14;
+            padding-top: 7px;
+        }
+        .timeline-city{
+            font-size: $f-s-14;
+            padding-top: 5px;
+            color: $white;
+        }
+        .timeline-content{
+            padding: 30px 40px 30px 20px;
+            .content-title{
+                font-size: $f-s-22;
+                margin-bottom: 0;
+            }
+            .content-p{
+                margin-bottom: 0;
+                font-size: $f-s-16;
+                hyphens: auto;
+                line-height: $line-height-2;
+            }
+        }
+    }
+}

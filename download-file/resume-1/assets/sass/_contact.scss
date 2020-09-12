@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          CONTACT
+-------------------------*/
+.contact{
+    ::-moz-placeholder, .form-control::-moz-placeholder {
+        color: $dark-2;
+    }
+    .form-item .form-control {
+        background: $bg-white;
+        border-radius: 0;
+        box-shadow: none;
+        height: 44px;
+        font-size: $f-s-14;
+        position: relative;
+        transition: border .9s ease;
+        border: none;
+        border-bottom: 1px solid $light-5;
+        color: $base-color;
+        &:focus{
+            border-bottom: 1px solid $base-color;
+        }
+    }
+    .contact-form textarea {
+        min-height: 175px;
+    }
+    #message.toast {
+        max-width: 500px;
+        padding: 2px 0 1px;
+        position: relative;
+        top: $f-s-18;
+        display: inline-block;
+        left: 20px;
+    }
+    .toast button span {
+        position: relative;
+        top: 8px;
+    }
+}

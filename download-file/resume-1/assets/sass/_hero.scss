@@ -1,0 +1,39 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          HERO
+-------------------------*/
+.hero {
+    background: url("http://placehold.it/1920x1080") no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        @include bg-before;
+    }
+
+    &::after {
+        @include bg-after;
+    }
+
+    .hero-center {
+        position: relative;
+        top: 50%;
+        transform: translateY(-35%);
+        z-index: 2;
+    }
+    .hero-content {
+        p {
+            max-width: 500px;
+        }
+        ul i {
+            font-size: 1.25rem;
+            margin-right: 1rem;
+
+            &:hover {
+                color: #d23e50 !important;
+            }
+        }
+    }
+}

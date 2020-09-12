@@ -1,0 +1,242 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+       UONE DARK
+-------------------------*/
+body.uone-dark{
+  background-color: $bg-dark-4;
+  color: $white;
+}
+.uone-dark{
+    .bg-grey{
+        background-color: $bg-light !important;
+    }
+    .bg-blue{
+        background-color: $bg-dark-5;
+    }
+    .header-sticky{
+        background-color: $bg-dark-5 !important;
+        nav li a, .navbar-brand {
+            color: $white;
+        }
+    }
+    .hero:before, .banner:before , .portfolio .img-overlay, .testimonial::before{
+        background-color: $grey-5 ;
+    }
+    .text-dark{
+        color: $white !important;
+    }
+    a.text-dark{
+        &:hover{
+            color: $white !important;
+        }
+        &:focus{
+            color: $white !important;
+        }
+    }
+    .comment-info a{
+        color: $white !important;
+        &:hover{
+            color: $base-color !important;
+        }
+    }
+    .form-item .form-control{
+        color: $white !important;
+    }
+    .text-muted{
+        color:  $light-2 !important;
+    }
+    .portfolio-filter li a{
+        color: $light-2 !important;
+    }
+    .bg-dark, .bg-white{
+        background-color: $bg-dark-7 !important;
+    }
+    .services-item{
+        background-color: $bg-dark-6 !important;
+    }
+    .blog .blog-link a:hover{
+        color: $base-color-two !important;
+        border-bottom-color: $base-color-two;
+    }
+    .blog-content h5 a:hover {
+        color: $e6e6e6 !important;
+    }
+    .img-thumbnail {
+        background-color: transparent;
+        border: 1px solid $light-2;
+    }
+    .form-item .form-control {
+        border-bottom: 1px solid $white;
+        background: $bg-dark-4;
+        &:focus{
+            border-bottom: 1px solid $base-color;
+        }
+    }
+    .navbar-nav .nav-item a:hover {
+        color: $base-color !important;
+    }
+    .navbar a:hover{
+        color: $base-color !important;
+    }
+    .pagination-blog{
+        li .page-link{
+            background-color: $bg-dark-6;
+            border-color: $dark-8;
+            color: $white !important;
+            &:hover{
+                background-color: $bg-base-color;
+                border-color: $base-color;
+                color: $white !important;
+                cursor: pointer;
+            }
+        }
+        li.active .page-link{
+            background-color: $bg-base-color;
+            border-color: $base-color;
+            color: $white !important;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        li.disabled .page-link{
+            color: $dark !important;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .uone-dark .header {
+        background-color: $bg-dark-5 !important;
+        nav {
+            a.navbar-brand {
+                color: $white;
+            }
+            li a {
+                color: $white;
+            }
+        }
+        button span{
+            color: $white;
+        }
+    } 
+}
+
+/*--------------------------------------
+       prefers-color-scheme: dark
+--------------------------------------*/
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: $bg-dark-4;
+        color: $white;
+    }
+    .bg-grey{
+        background-color: $bg-light !important;
+    }
+    .bg-blue{
+        background-color: $bg-dark-5;
+    }
+    .header-sticky{
+        background-color: $bg-dark-5 !important;
+        nav li a, .navbar-brand {
+            color: $white;
+        }
+    }
+    .text-dark{
+        color: $white !important;
+    }
+    a.text-dark{
+        &:hover{
+            color: $white !important;
+        }
+        &:focus{
+            color: $white !important;
+        }
+    }
+    .comment-info a{
+        color: $white !important;
+        &:hover{
+            color: $base-color !important;
+        }
+    }
+    .form-item .form-control{
+        color: $white !important;
+    }
+    .text-muted{
+        color:  $light-2 !important;
+    }
+    .portfolio-filter li a{
+        color: $light-2 !important;
+    }
+    .bg-dark, .bg-white{
+        background-color: $bg-dark-7 !important;
+    }
+    .services-item{
+        background-color: $bg-dark-6 !important;
+    }
+    .blog .blog-link a:hover{
+        color: $base-color-two !important;
+        border-bottom-color: $base-color-two;
+    }
+    .blog-content h5 a:hover {
+        color: $e6e6e6 !important;
+    }
+    .img-thumbnail {
+        background-color: transparent;
+        border: 1px solid $light-2;
+    }
+    .form-item .form-control {
+        border-bottom: 1px solid $white;
+        background: $bg-dark-4;
+        &:focus{
+            border-bottom: 1px solid $base-color;
+        }
+    }
+    .navbar-nav .nav-item a:hover {
+        color: $base-color !important;
+    }
+    .navbar a:hover{
+        color: $base-color !important;
+    }
+    .pagination-blog{
+        li .page-link{
+            background-color: $bg-dark-6;
+            border-color: $dark-8;
+            color: $white !important;
+            &:hover{
+                background-color: $bg-base-color;
+                border-color: $base-color;
+                color: $white !important;
+                cursor: pointer;
+            }
+        }
+        li.active .page-link{
+            background-color: $bg-base-color;
+            border-color: $base-color;
+            color: $white !important;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        li.disabled .page-link{
+            color: $dark !important;
+        }
+    }
+    @media (max-width: 991px){
+        .header {
+            background-color: $bg-dark-5 !important;
+            nav {
+                a.navbar-brand {
+                    color: $white;
+                }
+                li a {
+                    color: $white;
+                }
+            }
+            button span{
+                color: $white;
+            }
+        }
+    }
+}
+

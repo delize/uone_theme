@@ -1,0 +1,114 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+       MEDIA SCREENS
+-------------------------*/
+@media (min-width: 768px) {
+    .pl-md-6{
+        padding-left: 4rem;
+    }
+}
+@media (min-width: 1200px){
+    .sidebar-page .container{
+        max-width: 1000px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .navbar-brand {
+        width: 120px;
+    }
+}
+@media (max-width: 1199px){
+    .sidebar-page{
+        .page-content {
+            padding-left: 0 !important;
+        }
+        .sidebar{
+            width: 100%;
+            .sidebar-list {
+                text-align: center;
+            }
+            .sidebar-text {
+                text-align: center;
+                p{
+                    text-align: center;
+                    hyphens: inherit;
+                }
+            }
+            .socials{
+                position: relative;
+            }
+        }
+        .sidebar.hide {
+            left: -100%;
+        }
+    }
+}
+@media (max-width: 991px){
+    body{
+        padding-top: 63px;
+    }
+    .full-screen{
+        height: auto;
+    }
+    a.navbar-brand{
+        position: initial !important;
+    }
+    .hero{
+        .hero-content, .hero-center{
+            transform: none;
+        }
+    }
+    body.sidebar-page{
+        padding-top: 0;
+    }
+    .page-content{
+        padding-left: 0;
+    }
+    .hero-center {
+        transform: translateY(0);
+    }
+}
+@media (max-width: 767px){
+    h1{
+        font-size: $font-size-h !important;
+    }
+    .timeline{
+        padding-left: 0;
+    }
+    .resume ul.timeline > li{
+        margin: 0;
+    }
+    .timeline-title::before{
+        clip-path: none;
+    }
+    .resume ul.timeline::before, .resume ul.timeline > li::before{
+        display: none;
+    }
+    .resume ul.timeline .timeline-company{
+        position: initial;
+    }
+    .p-title-border{
+        border-right: none;
+        border-left: none;
+    }
+}
+@media (max-width: 576px) {
+    .hero{
+        .hero-content , .hero-center {
+            transform: none;
+        }
+    }
+    .comments img {
+        width: 85px;
+    }
+    .comment-info {
+        margin-left: 100px;
+    }
+    #message.toast {
+        top: 18px;
+        left: inherit;
+        font-size: $f-s-12;
+        padding: 3px 0;
+    }
+}

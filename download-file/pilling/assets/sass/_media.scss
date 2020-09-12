@@ -1,0 +1,121 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+       MEDIA SCREENS
+-------------------------*/
+@media (min-width: 768px) {
+    .pl-md-6{
+        padding-left: 4rem;
+    }
+    .testimonial .owl-nav{
+        display: none;
+    }
+}
+@media (min-width: 1200px){
+    .pilling-page .container{
+        max-width: 1050px;
+    }
+    #myVideo{
+        width: 100%;
+    }
+}
+@media (max-width: 1199px){
+    .section{
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    #services h2{
+        font-size: 50px;
+    }
+    .hero-02 .hero-slide{
+        background-size: auto 100%;
+    }
+    .hero-02 .hero-slide.zoom{
+        background-size: auto 200%;
+    }
+}
+@media (max-width: 991px){
+    body{
+        padding-top: 63px;
+    }
+    body.pilling-page{
+        padding-top: 0;
+    }
+    .personal-img img {
+        display: none; 
+    }
+    .personal-item{
+        margin-top: 1.5rem !important;
+    }
+}
+@media (max-width: 767px){
+    header {
+        background-color: #fff;
+        box-shadow: 0 1px 3px 0 $eee;
+    }
+    .overlay-menu-toggler{
+        right: 0.5rem;
+    }
+    .overlay-menu .overlay-menu-list .overlay-nav a, .overlay-menu .overlay-menu-list .overlay-nav span, .overlay-menu .overlay-menu-list .overlay-nav p {
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+    #pp-nav{
+        display: none;
+    }
+    .title-small{
+        display: none;
+    }
+    .section{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 2rem;
+    }
+    .fix-logo{
+        display: none;
+    }
+    #services h2{
+        font-size: 40px;
+    }
+    .testimonial .owl-dot{
+        display: none;
+    }
+    .color-scheme{
+        right: 15px;
+    }
+}
+@media (max-width: 575px) {
+    .comments img {
+        width: 85px;
+    }
+    .comment-info {
+        margin-left: 100px;
+    }
+    #message.toast {
+        top: 18px;
+        left: inherit;
+        font-size: $f-s-12;
+        padding: 3px 0;
+    }
+    .overlay-nav a, .overlay-nav span , .overlay-nav p{
+        padding: 0.5rem;
+        letter-spacing: 1px;
+    }
+    .overlay-menu .overlay-menu-list .overlay-nav > ul {
+        width: 100%;
+        float: none;
+        margin-bottom: 2rem;
+    }
+    #services h2{
+        font-size: $f-s-30;
+    }
+    .testimonial .display-table, .testimonial .display-content{
+        display: block;
+    }
+    .testimonial .testimonial-item {
+        padding: 15px;
+    }
+    .blog-single .modal-dialog, .portfolio-single .modal-dialog{
+        max-width: 100%;
+    }
+}

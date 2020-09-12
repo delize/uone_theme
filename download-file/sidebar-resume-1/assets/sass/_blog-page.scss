@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+       BLOG PAGE
+-------------------------*/
+.page-hero{
+    .hero-content a:hover{
+        color: $base-color !important;
+    }
+    .hero-center{
+        transform: translateY(-50%) !important;
+    }
+}
+.blog-section{
+    .image-blog{
+        img{
+            width: 100%;
+        }
+    }
+}
+.pagination-blog{
+    li .page-link{
+        color: $dark-3;
+        box-shadow: none !important;
+        &:hover{
+            background-color: $bg-base-color;
+            border-color: $base-color;
+            color: $white !important;
+            cursor: pointer;
+        }
+    }
+    li.active .page-link{
+        background-color: $base-color;
+        border-color: $base-color;
+        color: $white !important;
+        cursor: pointer;
+    }
+}
+.blog-section .blog-link a:hover {
+    color: $dark-3 !important;
+}

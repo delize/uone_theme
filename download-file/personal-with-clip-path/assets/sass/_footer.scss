@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          FOOTER
+-------------------------*/
+footer{
+    ul{
+        li{
+            a{
+                color: $white;
+                font-size: $f-s-r !important;
+                &:hover {
+                  color: $base-color;
+                }
+            }
+        }
+        li.list-inline-item:not(:last-child){
+            margin-right:1.5rem;
+        }
+    }
+    p{
+        a{
+            &:hover{
+                color: $base-color;
+            }
+        }
+    } 
+} 

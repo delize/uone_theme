@@ -1,0 +1,64 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+     Single Portfolio
+-------------------------*/
+.single-portfolio .owl-nav{
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 48px);
+    .owl-prev span , .owl-next span{
+        background: #d23e50;
+        color: #fff;
+        width: 38px;
+        height: 38px;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 30px;
+        margin: 0 5px;
+        &:hover{
+            background: #b21f2d;
+        }
+    }
+}
+.related-portfolio .owl-nav{
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 48px);
+    .owl-prev span, .owl-next span{
+        background: #d23e50;
+        color: #fff;
+        width: 38px;
+        height: 38px;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 30px;
+        margin: 0 5px;
+        &:hover{
+            background: #b21f2d;
+        }
+    }
+}
+.single-portfolio .owl-nav .owl-prev span{
+  user-select: none;
+}
+.single-portfolio .owl-carousel .owl-stage-outer {
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+}
+.related-portfolio.owl-carousel .owl-stage-outer {
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+}
+.p-title-border{
+  border-right: 1px dotted #929292;
+  border-left: 1px dotted #929292;
+}

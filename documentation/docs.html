@@ -1,0 +1,1000 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Uone- Documentation</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/LineIcons.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/prettify.css">
+    </head>
+    <body class="pt-0" data-spy="scroll" data-target="#scrollspy" data-offset="1">
+
+        <!--    SideBar Start    -->
+        <div class="sidebar bg-dark py-3 px-4 sidebar-pag">
+        <img class="border-0 border-bottom img-fluid" src="img/uone-logo.png" alt="/"/>
+        <div id="scrollspy" class="list-group sidebar-list">
+            <a class="list-group-item" href="#welcome">Welcome</a>
+            <a class="list-group-item" href="#html-structure">Html-Structure</a>
+            <a class="list-group-item" href="#fonts">Fonts</a>
+            <a class="list-group-item" href="#images">Images</a>
+            <a class="list-group-item" href="#video">Video</a>
+            <a class="list-group-item" href="#CSS-Structure">CSS-Structure</a>
+            <a class="list-group-item" href="#fonts-in-css">Fonts-in-css</a>
+            <a class="list-group-item" href="#images-in-css">Images-in-css</a>
+            <a class="list-group-item" href="#media-screens">Media-screens</a>
+            <a class="list-group-item" href="#Javascript">Javascript</a>
+            <a class="list-group-item" href="#Uone-js">Uone Js</a>
+            <a class="list-group-item" href="#php">PHP</a>
+            <a class="list-group-item" href="#contact-form">Contact form</a>
+            <a class="list-group-item" href="#credits">Credits</a>
+        </div>
+        <a class="sidebar-toggler lni-chevron-left size" href="javascript:void(0);"></a>
+    </div>
+        <!--    SideBar End    -->
+        <div class="page-content">
+            <div class="hero-section blog-hero clip-path-none py-5" id="hero">
+                <div class="hero-table py-5">
+                    <div class="hero-table-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 ">
+                                    <div class="text-center hero-content mx-auto">
+                                        <h1 class="text-white h4 mb-4">Uone Documentation</h1>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-hidden">
+                <div class="container">
+                    <div>
+                        <h2 id="welcome" class="mt-5"> Welcome</h2>
+                        <p> Thanks for your purchasing UOne HTML Template.Although this template is very easy to customize, We provide you a simple but useful documentation for your problems with customization.</p>
+                        <p> In this template we put comment for all sections in HTML files, All sections styles in CSS files and all sections JQuery in UOne JS file.</p>
+                        <h2 id="html-structure" class=""> HTML Structure</h2>
+                        <p>The template is based on <strong>Bootstrap 4.3.1</strong> Framework - <a href="http://getbootstrap.com" target="_blank">http://getbootstrap.com</a></p>
+                        <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.</p>
+                        <br>
+                        <pre class="prettyprint">
+    <code>
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-12&quot;&gt;
+            Level 1 column
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-6&quot;&gt;Level 2&lt;/div&gt;
+                &lt;div class=&quot;col-md-6&quot;&gt;Level 2&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+                </pre>
+                        <br>
+                        <p>If you need more information, please visit this site: <a href="http://getbootstrap.com/css/#grid" target="_blank">http://getbootstrap.com/css/#grid</a></p>
+                        <br>
+                        <p> In HTML files we used bootstrap container and container-fluid classes. when we need use all screen width we use container-fluid class and if we need have a box little than our screen width we use container class in our sections. </p>
+                        <p> We have two example below. Red boxes are container and container-fluid classes.</p>
+                        <img src="img/topmenu.png" alt="container and container-fluid classes" style="width: 100%">
+                        <br>
+                        <p>We have different Demos, U can choose one of them base on your requirement.</p>
+                        <p>for better understanding you can see 'Hero Section'code below.</p>
+                        <pre class="prettyprint">
+    <code>
+
+    <!--    Hero Start    -->
+    1<section class="hero overflow-hidden full-screen py-6" id="hero">
+    2    <div class="video-overlay">
+    3    <video autoplay muted loop id="myVideo">
+    4            <source src="assets/video/bg-video.mp4" type="video/mp4">
+    5        </video>
+    6    </div>
+    7    <div class="hero-center">
+    8        <div class="container">
+    9            <div class="row justify-content-center">
+    10                <div class="col-lg-12">
+    11                    <div class="text-center hero-content mx-auto">
+    12                        <h1 class="text-white mb-4">I'M Michael Doe</h1>
+    13                        <h2 class="text-white text-capitalize mb-0"><span class="base-color">A  </span> <span class="element" data-elements="UI Designer.,Web Designer.,Web Developer."> </span></h2>
+    14                        <p class="text-white mx-auto mt-4">In a professional context it often happens that private clients corder a publication to be made.</p>
+    15                        <div class="mt-4 pt-2">
+    16                            <a href="javascript:void(0);" class="pill-button white-pill-button font-weight-bold">Download Cv</a>
+    17                        </div>
+    18                    </div>
+    19                </div>
+    20            </div>
+    21        </div>
+    22    </div>
+    23</section>
+    <!--    Hero End    -->
+    </code>
+                 </pre>
+                        <p> For another sections that have Repetitious method you can use top example.<br>In Services, Portfolio, Price table, Testimonials and Blog section you can see these Repetitious method and can add or remove them.</p>
+                        <br>
+                        <h3 id="portfolio">Portfolio</h3>
+                        <p>In Uone HTML template files we have different sections.</p>
+                        <p>In portfolio section, Images are in different categories.</p>
+                        <p>To know how to do this, watch codes below and the description after that.</p>
+                        <pre class="prettyprint">
+    <code>
+       <!--   Portfolio Filters   -->
+    <ul id="portfolio-filter" class="list-unstyled list-inline mb-0 col-lg-12 text-left portfolio-filter">
+        <li class="list-inline-item">
+            <a href="#" data-filter="*" class="active my-1">All</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#" data-filter=".webdesign" class="my-1">Web Design</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#" data-filter=".mobiledesign" class="my-1">Mobile Design</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#" data-filter=".seo" class="my-1">Seo</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#" data-filter=".graphic" class="my-1">Graphic</a>
+        </li>
+    </ul>
+    </code>
+                </pre>
+                        <p>In "a" tags we have "data-filter" property, The value of this filters use for items that we want to be in a category. for example ".webdesign" use for portfolio Items that are in web design category. You can use multiple values in one item. "*" value select all items.</p>
+                        <h3 id="fonts" class=""> Fonts </h3>
+                        <p> Here We have two types of fonts. First is Google Fonts and The other is Font Icons</p>
+                        <p> We pick our fonts from <a href="https://fonts.google.com/" target="_blank"> Google Fonts </a>. In this website you can learn how to pick your favorite font and use that in your website template. </p>
+                        <p> Our Font Icons are from <a href="https://lineicons.com/icons/" target="_blank"> LineIcons </a> and
+                            <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome</a>. In this website you can learn how to pick your favorite font icon and use that in your website template. But if you want customize your social icons or another Icons you can see the codes below </p>
+                        <pre class="prettyprint">
+    <code>
+    <!-- Social Icons start -->
+    <div class="social-icon">
+        <ul class="list-inline py-2 mb-0">
+            <li class="list-inline-item"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0);"><i class="fa fa-dribbble"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <!-- Social Icons end -->
+</code>
+                </pre>
+                        <p> In "Social Icons" you can see "i" tags. In their class you see "fa fa-facebook " and others. In <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">Font Awesome</a> wbesite you can pick your icon name and put it to class of "i" tag. We copy them below to show better.</p>
+                        <pre class="prettyprint">
+    <code>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-google-plus"></i>
+    <i class="fa fa-instagram"></i>
+            </code>
+                </pre>
+                        <p> In "Services Section" you can see "i" tags. In their class you see " lni-brush-alt " and others. In <a href="https://lineicons.com/icons/" target="_blank"> LineIcons </a> wbesite you can pick your icon name and put it to class of "i" tag. We copy them below to show better.</p>
+                        <pre class="prettyprint">
+    <code>
+        <!-- Item 01 -->
+        <div class="col-md-6 col-lg-4 text-center text-md-left wow fadeInUp" data-wow-duration="1.25s">
+            <div class="services-item">
+                <div class="text-center border rounded p-25">
+                    <i class="lni-brush-alt size-md base-color"></i>
+                    <h5>Graphic Design</h5>
+                    <p class="text-muted mb-0">In a professional context it often happens that private clients corder a publication to be made.</p>
+                </div>
+            </div>
+        </div>
+    </code>
+                        </pre>
+                        <br>
+                        <h3 id="images" class=""> Images </h3>
+                        <p> Images makes templates more beautiful and useful. In UOne HTML templates we have Slider, Background, Banner, Portfolio, Blog and ... Images.</p>
+                        <p> Images comes with "img" tag in HTML files. You can put your image URL in this tag and see that on your website.</p>
+                        <p> You can see some sample "img tags" in "Portfolio Section" below</p>
+                        <pre class="prettyprint">
+    <code>
+    <!--  Portfolio Start  -->
+        <!-- Item 01 -->
+        .
+        .
+        <img src="assets/img/portfolio-img-01.png" alt="/" class="img-fluid rounded">
+        .
+        .
+        <!-- Item 02 -->
+        .
+        .
+        <img src="assets/img/portfolio-img-02.png" alt="/" class="img-fluid rounded">
+        .
+        .
+        <!-- Item 03 -->
+        .
+        .
+        <img src="assets/img/portfolio-img-03.png" alt="/" class="img-fluid rounded">
+        .
+        .
+
+        <!--   Portfolio End   -->
+    </code>
+                </pre>
+                        <p> "alt" In "img" tag is the name of image for search engines and browsers. When a browser can't show image, user see the name in "alt" and know what image was in this section.</p>
+                        <p> We put "/" in "alt" in "img" tags because of this is only a demo template. But you must put your images name because of SEO and your users.</p>
+                        <p> Images URL in portfolio section items are in two tags, first is "img" tags and other is "a" tags. We described "img" tags in top, But what is "a" tags here and what is their usage? </p>
+                        <p> In fact these tags are for Magnific Popup JQuery. When In Portfolio section click on "Plus Icon" in images hover you can see images bigger and better. This is from URL of images in "a" tag in Magnific Popup JQuery. </p>
+                        <p> You can see "a" tags code and these action in an image below. </p>
+                        <pre class="prettyprint">
+    <code>
+<!--  Portfolio Start  -->
+    <!-- Item 01 -->
+    <div class="img-overlay text-center">
+        <div class="img-overlay-content">
+            .
+            .
+            .
+            <a href="assets/img/portfolio-img-01.png" class="js-zoom-gallery text-white ml-1">
+                <i class="lni-plus rounded p-2 bg-dark text-white size-sm font-weight-bold"></i>
+            </a>
+            .
+        </div>
+    </div>
+    <!-- Item 02 -->
+    <div class="img-overlay text-center">
+        <div class="img-overlay-content">
+            .
+            .
+            .
+            <a href="assets/img/portfolio-img-02.png" class="js-zoom-gallery text-white ml-1">
+                <i class="lni-plus rounded p-2 bg-dark text-white size-sm font-weight-bold"></i>
+            </a>
+            .
+        </div>
+    </div>
+
+    <!--   Portfolio End   -->
+    </code>
+                </pre>
+                        <br>
+                        <img src="img/imgportfolio.png" style="width: 100%">
+                        <br>
+                        <br>
+                        <h2 id="video" class="">Video</h2>
+                        <p>You can add your favorite video from your local storage or online video in your template.</p>
+                        <p>If you want to use online video you should add embed code in your index or you can add url link in href of 'a' tag.</p>
+                        <p>In Uone HTML template files we use url in "a" tag.</p>
+                        <p>You can See example below</p>
+                        <pre class="prettyprint">
+    <code>
+      <a href="https://vimeo.com/354894903" class="popup-vimeo video-box-btn my-4 mb-lg-0">
+          <i class="fa fa-play size-sm base-color mx-auto"></i>
+      </a>
+    </code>
+                </pre>
+                        <p>Also you can add video to background</p>
+                        <p>In Uone HTML template files we have background video in hero section. We use that with relative url address.</p>
+                        <p>you can see code below</p>
+                        <pre class="prettyprint">
+    <code>
+        <div class="video-overlay">
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/video/bg-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </code>
+                        </pre>
+                        <br>
+                        <h2 id="CSS-Structure" class=""> CSS Structure</h2>
+                        <p> HTML is the structure of a template and CSS is the design. In CSS we paint and make codes beautiful.</p>
+                        <p> In Uone HTML template CSS files, we use some libraries and make them powerful and more beautiful in Style CSS file.</p>
+                        <p> "Table of contents" In Style CSS file help you to find each section styles and you can change or customize them there.</p>
+                        <h3 id="main-css" class=""> Main CSS</h3>
+                        <p> "General Styles" are important styles that we want use them in all template design in "Style CSS" file. But there are some styles that we don't want use general styles them. Because of this reason we use "General Styles" in top of all styles in "Style CSS" file. browsers read styles line by line and if you have to class with same styles but variation data browsers read second class.
+                            you can see an image of "General Styles" below </p>
+                        <img src="img/style.png" style="width: 100%; border: 2px solid #000">
+                        <p> Top image is from "style.css" file</p>
+                        <br>
+                        <h3 id="fonts-in-css" class=""> Fonts in css </h3>
+                        <p> Fonts are very important for making template and text more and more beautiful. Then we should use them in CSS files. After picking one or more fonts from <a href="https://fonts.google.com/"> Google Fonts</a>, that website show you how to use them in your template or website. We bring an example for you from "General Styles" of "style.css" </p>
+                        <pre class="prettyprint">
+    <code>
+    /*-------------------------
+             GENERAL
+    -------------------------*/
+                    .
+                    .
+    body{
+         font-family: 'Muli', sans-serif;
+                    .
+                    .
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        font-family: 'Poppins', sans-serif;
+    }
+                </code>
+                </pre>
+                        <p> After all font families put a Backup font because sometimes some browsers can't support your font and try to read backup font at last if browser cant't read none of fonts will read "sans-serif" font.</p>
+                        <br>
+                        <h3 id="images-in-css" class=""> Images in css</h3>
+                        <p> Images in CSS are different from HTML. We often use CSS for background images and define their width, height, position and ... .
+                            We bring background images styles from "style.css" for you below. </p>
+                        <pre class="prettyprint">
+    <code>
+    /*------------------------
+              HERO
+    -------------------------*/
+    .hero-section{
+    background-image: url(../img/hero-bg.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    clip-path: ellipse(100% 55% at 48% 44%);
+    }
+    </code>
+                </pre>
+                        <p> When we want bring an image for background in "Style CSS" we use <strong>"background-image: url(sample/img/image.jpg)"</strong>. But when we want to use another properties after images URL we must change <strong>"background-image"</strong> to <strong>"background"</strong>.</p>
+                        <br/>
+                        <h3 id="media-screens" class=""> Media Screens </h3>
+                        <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. But sometimes text, images or ... don't work good in some screens. Because of this web designers and developers use "Media Screens" in CSS files to solve this problem. In Uone template CSS we use some media screens to make our theme fully responsive for all screens.
+                            You can see an example  from "style.css" of Uone template below. </p>
+                        <pre class="prettyprint">
+    <code>
+    /*-------------------------
+           MEDIA SCREENS
+    -------------------------*/
+    @media (min-width: 768px) {
+        .pl-md-6{
+            padding-left: 4rem;
+        }
+        .hero-content h1{
+            font-size: 50px;
+        }
+    }
+    @media (max-width: 991px){
+        body{
+            padding-top: 63px;
+        }
+        .full-screen{
+            height: auto;
+        }
+        .header-section {
+            background-color: #fff;
+            padding: 0;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+        .header-section .navbar-brand .light-logo {
+            display: none;
+        }
+        .header-section .navbar-brand .dark-logo{
+            display: inline-block;
+        }
+        .header-section button span{
+            color: #000;
+        }
+        .header-section nav li a {
+            color: #222;
+        }
+        .hero-section{
+            clip-path: none;
+        }
+    }
+                </code>
+                </pre>
+
+                        <br>
+                        <h2 id="Javascript" class=""> Javascript</h2>
+                        <p>After finishing template structure (HTML) and give that a beautiful design (CSS) we should give our template Mobility. We do this Important factor with "Java Script" and that awesome library "JQuery".
+                            Uone HTML template use beautiful and useful Java scripts like Particle, Owl Carousel (for sliders), Isotop JS and ... for users and customers.
+                            using and customize this template scripts are very easy and we describe important thing and options.</p>
+                        <h3 id="Uone-js" class=""> Uone JS File</h3>
+                        <p> "Uone.js" is Uone HTML Template main JavaScript file that all libraries are customize and ready for run there.</p>
+                        <br>
+                        <h3>Smooth scroll js :</h3>
+                        <p>A lightweight script to animate scrolling to anchor links</p>
+                        <pre class="prettyprint">
+    <code>
+    /*-------------------------
+            SMOOTH SCROLL
+    -------------------------*/
+    function smoothScroll(){
+
+        "use strict";
+
+        $('.header-section .navbar-nav a').on('click', function(event) {
+            var $anchor = $(this);
+            $root.stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 60
+            }, 1500, 'easeInOutQuart');
+            event.preventDefault();
+        });
+    }
+
+    </code>
+                </pre>
+                        <br>
+                        <h3>Header Sticky :</h3>
+                        <p>Sticky navigation is a term used to describe a fixed navigation menu on a webpage that remains visible and in the same position as the user scrolls down and moves about a site.Persistent navigation bars - or “sticky headers” - are now a web design standard.</p>
+                        <pre class="prettyprint">
+    <code>
+    /*-------------------------
+            HEADER STICKY
+    -------------------------*/
+    function headerSticky(){
+
+        "use strict";
+
+        if ($window.scrollTop() > 100) {
+            $('#header').addClass('header-sticky');
+        } else {
+            $('#header').removeClass('header-sticky');
+        }
+    }
+
+     </code>
+
+                </pre>
+                        <br>
+                        <h3>Typed js :</h3>
+                        <p>Typed.js is a library that types. Enter in any string, and watch it type at the speed you've set, backspace what it's typed, and begin a new sentence for however many strings you've set.</p>
+                        <pre class="prettyprint">
+     <code>
+     /*-------------------------
+            TYPED JS
+     -------------------------*/
+     function typedJS() {
+
+        "use strict";
+
+        var options = {
+            strings: $(".element").attr('data-elements').split(','),
+            typeSpeed: 100,
+            backDelay: 3000,
+            backSpeed: 50,
+            loop: true
+        };
+        var typed = new Typed(".element", options);
+      }
+
+     </code>
+
+                </pre>
+                        <br>
+                        <h3>Magnific Popup Js :</h3>
+                        <p>Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device.</p>
+                        <pre class="prettyprint">
+     <code>
+     /*-------------------------
+     MAGNIFIC POPUP JS FOR VIDEO
+     -------------------------*/
+     function popUpVideo(){
+
+        "use strict";
+
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+     }
+
+     /*-------------------------
+         MAGNIFIC POPUP JS
+     -------------------------*/
+     function portfolioPopup() {
+
+        "use strict";
+
+        if (('.portfolio-items').length > 0) {
+            $('.portfolio-items').each(function() {
+                $(this).magnificPopup({
+                    delegate: '.js-zoom-gallery',
+                    type: 'image',
+                    gallery: {
+                        enabled:true
+                    }
+                });
+            });
+         }
+     }
+
+     </code>
+
+                </pre>
+                        <br>
+                        <h3>Owl Carousel Js :</h3>
+                        <p>Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider. Owl Carousel is a neat little carousel with all the perks you could possibly need. </p>
+                        <pre class="prettyprint">
+    <code>
+    /*-------------------------
+         OWL CAROUSEL JS
+    -------------------------*/
+    function testimonialsCarousel() {
+
+        "use strict";
+
+        $(".testimonial .owl-carousel").owlCarousel({
+            items: 1,
+            nav: false,
+            autoplay: true,
+            loop: true,
+            dots: true,
+            mouseDrag: true,
+            touchDrag: true,
+            smartSpeed: 1000,
+            autoplayHoverPause: true,
+        });
+    }
+
+    </code>
+                </pre>
+                        <br>
+                        <h3>Isotope js :</h3>
+                        <p>Isotope js is a JavaScript library that makes it easy to sort, filter, and add Masonry layouts to items on a webpage. ... In short, isotope adds interactivity to your layouts without requiring assistance from a server.</p>
+                        <pre class="prettyprint">
+    <code>
+    /*-------------------------
+        ISOTOPE JS
+    -------------------------*/
+    function portfolioIsotop() {
+
+        "use strict";
+
+        var $container = $('.portfolio-items');
+        var $filter = $('#portfolio-filter');
+        $container.isotope({
+            filter: '*',
+            layoutMode: 'masonry',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear'
+            }
+        });
+        $filter.find('a').on("click",function() {
+            var selector = $(this).attr('data-filter');
+            $filter.find('a').removeClass('active');
+            $(this).addClass('active');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    animationDuration: 750,
+                    easing: 'linear',
+                    queue: false,
+                }
+            });
+            return false;
+        });
+    }
+
+    </code>
+                </pre>
+                        <br>
+                        <h3>Wow Js:</h3>
+                        <p>Reveal Animations When You Scroll. Very Animate.css Friend .Easily customize animation settings: style, delay, length, offset, iterations... </p>
+                        <p>If you want to use wow.js to develop commercial sites, themes, projects, and applications you are 100% free to do so! Your source code is kept proprietary. Just remember to include the entire contents of The MIT Licenses in your product. </p>
+                        <p>Installing wow.js takes only seconds: <a href="https://wowjs.uk/docs.html">Read the documentation</a></p>
+                        <pre class="prettyprint">
+    <code>
+    /*-------------------------
+         WOW Js
+    -------------------------*/
+    new WOW().init();
+
+    </code>
+                </pre>
+                        <br>
+                        <h3>CountUp Js :</h3>
+                        <p>CountUp.js is a dependency-free, lightweight Javascript class that can be used to quickly create animations that display numerical data in a more interesting way. Despite its name, CountUp can count in either direction, depending on the start and end values that you pass. </p>
+                        <p>Download the latest version from github and include it to your page using script tag</a></p>
+                        <pre class="prettyprint">
+    <code>
+
+    <script src="countUp.js"></script>
+
+  /*-------------------------
+            Count up
+  -------------------------*/
+    $(window).scroll(function () {
+
+        "use strict";
+
+        var scroll = $(window).scrollTop();
+        var countId = $('#count-up');
+        var winH = $(window).height(),
+            countOffset = countId.offset().top;
+        if (scroll + winH > countOffset) {
+            $('.timer').countTo();
+            $('.count-number').removeClass('timer');
+        }
+    });
+
+    </code>
+                </pre>
+                        <br>
+                        <h3>Google Map Js :</h3>
+                        <p> Google Maps JavaScript API allows you to use the potential of Google Maps in a simple way. Learn the concepts, and create custom maps for your site.</p>
+                        <pre class="prettyprint">
+    <code>
+    <!-- Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcmB207_E3E4SkA8jTA8FQjSWTop9YxZU"></script>
+    /*-------------------------
+              GOOGLE Map
+      -------------------------*/
+    function mapInit() {
+        "use strict";
+        var options = {
+            center: new google.maps.LatLng(43.053454, -76.144508),
+            zoom: 11,
+            mapTypeControl: true,
+            panControl: false,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+                position: google.maps.ControlPosition.TOP_LEFT
+            },
+            scaleControl: false,
+            styles: [{
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{
+                    "color": "#576ee9"
+                }, {
+                    "lightness": 17
+                }]
+            }, {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [{
+                    "color": "#f5f5f5"
+                }, {
+                    "lightness": 20
+                }]
+            }, {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [{
+                    "color": "#ffffff"
+                }, {
+                    "lightness": 17
+                }]
+            }, {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [{
+                    "color": "#ffffff"
+                }, {
+                    "lightness": 29
+                }, {
+                    "weight": 0.2
+                }]
+            }, {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [{
+                    "color": "#ffffff"
+                }, {
+                    "lightness": 18
+                }]
+            }, {
+                "featureType": "road.local",
+                "elementType": "geometry",
+                "stylers": [{
+                    "color": "#ffffff"
+                }, {
+                    "lightness": 18
+                }]
+            }, {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [{
+                    "color": "#f5f5f5"
+                }, {
+                    "lightness": 21
+                }]
+            }, {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [{
+                    "color": "#d5d5d5"
+                }, {
+                    "lightness": 21
+                }]
+            }, {
+                "elementType": "labels.text.stroke",
+                "stylers": [{
+                    "visibility": "on"
+                }, {
+                    "color": "#f8f8f8"
+                }, {
+                    "lightness": 25
+                }]
+            }, {
+                "elementType": "labels.text.fill",
+                "stylers": [{
+                    "saturation": 36
+                }, {
+                    "color": "#222222"
+                }, {
+                    "lightness": 30
+                }]
+            }, {
+                "elementType": "labels.icon",
+                "stylers": [{
+                    "visibility": "off"
+                }]
+            }, {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [{
+                    "color": "#f5f5f5"
+                }, {
+                    "lightness": 19
+                }]
+            }, {
+                "featureType": "administrative",
+                "elementType": "geometry.fill",
+                "stylers": [{
+                    "color": "#fefefe"
+                }, {
+                    "lightness": 10
+                }]
+            }, {
+                "featureType": "administrative",
+                "elementType": "geometry.stroke",
+                "stylers": [{
+                    "color": "#fefefe"
+                }, {
+                    "lightness": 17
+                }, {
+                    "weight": 1.2
+                }]
+            }],
+        };
+        var map = new google.maps.Map(document.getElementById('my-map'), options);
+        var marker1 = new google.maps.Marker({
+            position: map.getCenter(),
+            title: "Retrina",
+            icon: 'assets/img/location-map.png',
+            animation: google.maps.Animation.BOUNCE
+        });
+        marker1.setMap(map);
+    }
+
+    </code>
+                </pre>
+
+                        <br>
+                        <h3> Back to Top Js :</h3>
+                        <p> Back toTop Js is an ultra-light jQuery back to top plugin which enables an element to smooth scroll the page back to the top at a given speed.</p>
+                        <pre class="prettyprint">
+    <code>
+
+        /*-------------------------
+         Back to Top Button
+        -------------------------*/
+        function backToTop() {
+            $('.back-to-top').click(function() {
+                $('body,html').animate({
+                    scrollTop : 0
+                }, 1500);
+            });
+        }
+    </code>
+                </pre>
+                        <br>
+                        <h3> Dark Js :</h3>
+                        <p>uone Demo has this option that you can switch light mode to dark mode with one click.</p>
+                        <p>If you want to add this property in your demo , add the code below .</p>
+                        <pre class="prettyprint">
+    <code>
+
+        HTML :
+        <a class="color-scheme text-white bg-base-color d-inline-block" href="javascript:void(0)"><i class="lni-night"></i><span>Dark</span></a>
+        <a class="color-scheme color-scheme-light text-white bg-base-color d-none" href="javascript:void(0)"><i class="lni-sun"></i><span>Light</span></a>
+ 
+        CSS :
+        .color-scheme {
+            position:fixed;
+            z-index:999;
+            right:-48px;
+            top:75px;
+            padding:.5rem .75rem;
+            border-radius:5px 0 0 5px;
+            transition:all 0.5s ease;
+        }
+        .color-scheme span {
+            padding-left:.75rem;
+            transition:all 0.3s ease;
+        }
+        .color-scheme:hover {
+            right:0;
+        }
+        .color-scheme:hover span {
+            padding-left:0.5rem;
+        }
+        .color-scheme i {
+            position:relative;
+            top:1px;
+        }
+        .color-scheme:hover {
+            color: #ffffff;
+        }
+
+        JS :
+        function colorScheme(){
+        var $darkLogo = $('.dark-logo');
+            $('.color-scheme').click(function() {
+                $("body").toggleClass('uone-dark');
+                $('.color-scheme').removeClass('d-none').addClass('d-inline-block');
+                $(this).removeClass('d-inline-block').addClass('d-none');
+            });
+        }
+
+
+    </code>
+                </pre>
+
+                        <p> For customize each library JS file options in "Uone.js" you can go to their website in documentation tab or page find and customize your js files. </p>
+                        <br>
+						<h2 id="php" class="">PHP</h2>
+						<p>Although in Html templates you can't see any php files, But some templates use php files in contact form as a feature or option for their customers. Uone use an awesome ajax form for customers in contact form and here you can learn how use it.</p>
+						<h3 id="contact-form" class="">Contact Form</h3>
+                        <p>Contact forms are the easiest way to let your website visitors get in touch with you.</p>
+                        <p>In Uone HTML template we have contact form you can see code below</p>
+                        <pre class="prettyprint">
+    <code>
+		<div class="row">
+                    <div class="col-lg-12 mt-5 contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-lg-6 form-item">
+                                    <div class="form-group">
+                                        <input name="name" id="name" type="text" class="form-control" placeholder="Your Name*" required >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 form-item">
+                                    <div class="form-group">
+                                        <input name="email" id="email" type="email" class="form-control" placeholder="Your Email*" required >
+                                    </div>
+                                </div>
+                                <div class="col-12 form-item">
+                                    <div class="form-group">
+                                        <input name="subject" id="subject" type="text" class="form-control" placeholder="Your Subject*" required >
+                                    </div>
+                                </div>
+                                <div class="col-12 form-item">
+                                    <div class="form-group">
+                                        <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mt-4 text-left">
+                                    <button type="button" class="pill-button rounded" id="submit-btn" onclick="sendEmail()">Submit</button>
+                                    <div id="message" class="toast text-white shadow-none border-0" role="alert" aria-live="assertive" aria-atomic="true" data-delay="400000" >
+                                        <div class="toast-body d-inline-block"></div>
+                                        <button type="button" class="pr-3 close" data-dismiss="toast" aria-label="Close">
+                                            <span aria-hidden="true" class="lni-close size-xs text-white"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    </code>
+                        </pre>
+                        <br>
+                        <h3>Contact form setup</h3>
+                        <p>To set up a contact form you will need a working e-mail address. After build an email or choose one go to "sendEmail.php" file and on 8th line replace it with "sample@uone.com" email address.</p>
+						                   <pre class="prettyprint">
+    <code>
+    
+  2  $data = [];
+  3  if ($_POST) {
+  4	  $name = "";
+  5	  $email = "";
+  6	  $subject = "";
+  7	  $comments = "";
+  8	  $recipient="sample@uone.com"; // Your email comes here
+
+    </code>
+                </pre>
+                        <p>If you want change Success, Warning or Error notifications go to "sendEmail.php" file and do it in lines 31 to 46.</p>
+						<pre class="prettyprint">
+	<code>
+  31  if (mail($recipient, $subject, $comments, $headers)) {
+  32    $data = array(
+  33      'status' => 'Congratulation',
+  34      'message' => 'Your message sent successfully.'
+  35    );
+  36  } else {
+  37    $data = array(
+  38      'status' => 'Error',
+  39      'message' => 'Your message did not send.'
+  40    );
+  41  }
+  42  } else {
+  43    $data = array(
+  44    'status' => 'Warning',
+  45    'message' => 'Something went wrong, Please try again.'
+  46  );
+	</code>
+						</pre>
+                        <p>We make all contact fields required with notification. For change text of those notifications go to "uone.js" file and do it in 'Ajax Contact Form' section. You can see them below.</p>
+						<pre class="prettyprint">
+    <code>
+    
+  if(!name){
+        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('.toast-body').html('Name is  required');
+    } else if(!email){
+        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('.toast-body').html('Email is  required');
+    } else if(!validateEmail(email)){
+        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('.toast-body').html('Email is not valid');
+    } else if(!subject){
+        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('.toast-body').html('Subject is  required');
+    }else if(!comments){
+        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
+        $('.toast-body').html('Comments is  required');
+    }
+
+    </code>
+                </pre>
+						<p>Ultimately if you want change status of required fields go to js file and remove 'else if' of that field. you can see them top.</p>
+						<h3> If You have any question Contact Us with sending mail and we will answer Instantly.</h3>
+					
+                        <br>
+						
+                        <h3 id="credits" class=""> Credits </h3>
+                        <ul>
+                            <li>jQuery v3.4.1  : https://jquery.com</li>
+							<li>Bootstrap v4.3.1 : http://getbootstrap.com</li>
+                            <li>Lineicons: http://lineicons.com</li>
+                            <li>Fontawesome: https://fontawesome.com/v4.7.0/</li>
+                            <li>Count to Js :  </li>
+
+                            <li>Magnific Popup - v1.1.0 : http://dimsemenov.com/plugins/magnific-popup</li>
+                            <li>Isotope Packaged v3.0.2 : http://isotope.metafizzy.co</li>
+                            <li>Owl Carousel v2.3.4 : https://owlcarousel2.github.io/OwlCarousel2</li>
+                            <li>Typed JS plugin v2.0.9 : https://github.com/mattboldt/typed.js</li>
+                            <li>Google Map Js : https://maps.googleapis.com/maps/api</li>
+                            <li></li>
+                            <li>Images From : http://www.unsplash.com and https://www.freepik.com</li>
+                        </ul>
+						
+						<h3 class="text-center my-4">Thanks for choosing us.</h3>
+                    </div>
+                </div>
+            </div>
+			
+            <!--   Footer Start  -->
+            <div class="bg-dark overflow-hidden py-3 text-center">
+                <div class="container">
+                    <p class=" mb-0 text-white">Copyright © 2019. Template has been designed by <a class="base-color" href="javascript:void(0);">Retrina</a></p>
+                </div>
+            </div>
+            <!--   Footer End  -->
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/prettify/prettify.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/layout.js"></script>
+         <script src="js/jquery.localscroll-1.2.7.js" type="text/javascript"></script>
+         <script src="js/highlight.js" type="text/javascript"></script>
+         <script src="js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/uone.js"></script>
+    </body>
+</html>

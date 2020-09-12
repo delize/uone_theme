@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+        HEADER
+-------------------------*/
+.header{
+    padding: 5px 0;
+    transition: all 0.8s ease;
+    box-shadow: 0 1px 3px 0 $grey-3;
+    nav{
+        a{
+            color: $black-2;
+            font-size: $font-size-base;
+            background-color: transparent !important;
+            margin: 0 7px;
+            line-height: $line-height;
+            transition: all 0.5s;
+            font-weight: $f-w-400;
+        }
+        a.text-dark:hover{
+            color: $base-color !important;
+        }
+        a.navbar-brand{
+            font-size: $f-s-25 !important;
+            padding: 0;
+        }
+        .nav-pills a.active{
+            color: $base-color !important;
+        }
+    }
+}

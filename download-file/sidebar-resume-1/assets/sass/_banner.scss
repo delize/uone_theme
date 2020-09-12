@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          BANNER
+-------------------------*/
+.banner {
+    background-image: url("http://placehold.it/1920x1080");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    &:before{
+        @include banner-before;
+    }
+}

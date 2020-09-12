@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         About
+-------------------------*/
+.checkmark-list li > span:before{
+  content: '\e94c';
+  font-family: $lineIcon;
+  color: $base-color;
+  padding-right: 8px;
+}

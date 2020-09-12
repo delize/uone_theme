@@ -1,0 +1,53 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          BLOG
+-------------------------*/
+.blog{
+    .image-blog{
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .blog-title{
+        position: absolute;
+        background-color: $bg-dark;
+        padding: 15px 20px;
+        bottom: -16px;
+        left: 0;
+        width: 100%;
+        color: $white;
+    }
+    .blog-content h5{
+        margin-bottom: 0;
+    }
+    .blog-content p{
+        margin-top: 20px;
+    }
+    .blog-item h5 a:hover{
+      color: $base-color !important;
+    }
+    .blog-link a{
+        border-bottom: 1px solid $dark;
+        &:hover{
+            color: $base-color-two !important;
+            border-bottom-color: $base-color-two;
+        }
+    }
+    .more-blogs a{
+        font-size: $f-s-20;
+        border-bottom: 1px solid $dark;
+        padding-bottom: 5px;
+        font-weight: $f-w-600;
+        &:hover{
+            color: $base-color-two !important;
+            border-bottom: 1px solid $base-color-two;
+        }
+    }
+    .blog-title ul li i {
+        position: relative;
+        top: 1px;
+    }
+}

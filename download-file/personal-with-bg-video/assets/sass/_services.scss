@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         Services
+-------------------------*/
+.flip-container{
+    margin-top: 30px;
+    &:hover{
+        .flipper{
+            transform: rotateY(180deg);
+        }
+    }
+    .flipper{
+        transition: .5s all ease;
+        transform-style: preserve-3d;
+        position: relative;
+        .services-item-front{
+            margin-top: 30px;
+            backface-visibility: hidden;
+            text-align: center;
+            padding: 2rem;
+            z-index: 2;
+            transform: rotateY(0deg);
+            background: $white;
+            border-radius: $rd-r;
+        }
+        .services-item-back{
+            backface-visibility: hidden;
+            text-align: center;
+            padding: 2rem;
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 100%;
+            margin-top: 0;
+            transition: .5s all ease;
+            border-radius: $rd-r;
+            transform: rotateY(180deg);
+            background: crimson;
+            color: $white;
+            .services-item-back-content{
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%)
+            }
+            i{
+                font-size: 138px;
+                position: absolute;
+                opacity: 0.2;
+                left: calc(50% - 69px);
+                top: calc(50% - 69px);
+            }
+        }
+    }
+}
+

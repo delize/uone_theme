@@ -1,0 +1,95 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+     Sidebar Menu
+-------------------------*/
+.sidebar-page{
+    .color-scheme{
+        top: 15px;
+    }
+    .sidebar{
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        transition: all 0.3s ease;
+        z-index: 1030;
+        .sidebar-text p{
+            text-align: justify;
+            hyphens: auto;
+        }
+        .sidebar-list{
+            min-height: 65%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            .list-group-item{
+                padding: 0.75rem 0;
+                margin: 0;
+                border: none;
+                background-color: transparent!important;
+                text-transform: uppercase;
+            }
+        }
+        .uone-logo{
+            margin-bottom: 1rem;
+        }
+        .uone-logo img{
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+            max-width: 200px !important;
+        }
+        a{
+            color: $white;
+            font-size: $f-s-16;
+            &:hover{
+                color: $base-color;
+            }
+        }
+        a.active{
+            color: $base-color;
+        }
+        .socials{
+            position: absolute;
+            bottom: 0;
+        }
+        .socials a{
+            font-size: $f-s-20;
+            padding: 5px;
+        }
+    }
+    .sidebar.hide{
+        left: -250px;
+    }
+}
+
+.page-content{
+    width: 100%;
+    float: left;
+    padding-left: 250px;
+    transition: all 0.3s ease;
+}
+.page-content.full-width{
+    padding-left: 0;
+}
+.sidebar-toggler {
+    position: absolute;
+    top: 15px;
+    color: $white !important;
+    background-color: $bg-base-color;
+    padding: 9px 12px;
+    right: 0;
+    border-radius: 4px 0 0 4px;
+    transition: all 0.3s ease;
+}
+.sidebar-toggler.move{
+    right: -40px;
+    border-radius: 0 4px 4px 0;
+}
+.title-border{
+    border-left: 2px solid $base-color;
+    padding-left: 15px;
+}

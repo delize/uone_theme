@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+       SINGLE BLOG
+-------------------------*/
+.pt-hero{
+  padding-top: 66px;
+}
+.comments{
+    img{
+        width: 80px;
+        border-radius: 50%;
+    }
+    .comment-info{
+        margin-left: 100px;
+    }
+    .comment-info a{
+        color: #0b0b0b;
+        &:hover{
+            color: $base-color !important;
+        }
+    }
+}
+

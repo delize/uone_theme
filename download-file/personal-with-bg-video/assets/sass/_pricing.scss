@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         PRICING
+-------------------------*/
+.pricing-item{
+    margin-bottom: 0;
+    .shape {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-color: $bg-base-color;
+        top: -30px;
+        left: -73px;
+        transform: rotate(-43deg);
+    }
+    .recommend {
+        position: absolute;
+        color: $white;
+        top: 30px;
+        left: -2px;
+        transform: rotate(-43deg);
+        z-index: 1;
+        font-size: $f-s-11;
+        text-transform: uppercase;
+        font-weight: $f-w-600;
+    }
+    &:nth-child(2){
+        .pricing-item-content{
+            position: relative;
+            overflow: hidden;
+        }
+    }
+    .pricing-item-content{
+        transition: all 0.3s ease;
+        &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+    }
+    p {
+        font-size: $f-s-27;
+        span {
+            font-size: $f-s-17;
+        }
+    }
+    ul {
+        line-height: 2em;
+    }
+}

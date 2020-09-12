@@ -1,0 +1,35 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+      RETURN TO TOP
+-------------------------*/
+.return-to-top {
+    position: fixed;
+    bottom: -55px;
+    right: 30px;
+    background: $bg-base-color;
+    width: 45px;
+    height: 45px;
+    border-radius: $rd-r;
+    display: inline-block;
+    transition: all 0.3s ease;
+    z-index: 999;
+    text-align: center;
+    i{
+        color: $white;
+        margin: 0;
+        position: relative;
+        top: 10px;
+        font-size: $f-s-24;
+        transition: all 0.3s ease;
+    }
+    &:hover{
+        background: $bg-base-color-two;
+    }
+}
+.return-to-top.show{
+    bottom: 30px;
+    &:hover{
+        transform: translateY(-5px);
+    }
+}

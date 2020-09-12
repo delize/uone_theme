@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         Services
+-------------------------*/
+.services-item{
+    margin-top: 30px;
+    transition: .5s all ease;
+    background-color: $bg-white;
+    overflow-x: hidden;
+    border-radius: $rd-4;
+    &:hover{
+        background-color: $bg-base-color !important;
+        color: $white !important;
+        overflow: hidden;
+        border-radius: $rd-4;
+        .services-icon{
+            opacity: 0.12;
+            color: $white;
+        }
+    }
+    .services-icon{
+        position: absolute;
+        left: calc(50% - 71px);
+        top: calc(50% - 51px);
+        opacity: 0.12;
+        font-size: 8.5rem;
+        color: $ccc;
+    }
+}

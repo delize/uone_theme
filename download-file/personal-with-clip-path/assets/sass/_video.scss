@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         Video
+-------------------------*/
+.video-box-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: $bg-white;
+    z-index: 20;
+    top: calc(50% - 50px);
+    left: calc(50% - 30px);
+    box-shadow: 0 0 0 7px rgba(255,255,255,0.2);
+    border-radius: $rd-p-50;
+    transition: all .3s linear;
+    margin: 0 auto;
+    &:hover{
+        box-shadow: 0 0 0 17px rgba(255,255,255,0.2);
+    }
+    i{
+        position: absolute;
+        left: calc(50% - 6px);
+        top: calc(50% - 12px);
+    }
+}
+.video .img-thumbnail{
+    background-color: transparent !important;
+}

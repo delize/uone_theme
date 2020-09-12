@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          BLOG
+-------------------------*/
+.blog{
+    .image-blog{
+        img{
+            width: 100%;
+        }
+    }
+    .blog-link a{
+        border-bottom: 1px solid $dark;
+        &:hover{
+            color: $base-color !important;
+            border-bottom: 1px solid $base-color;
+        }
+    }
+    .more-blogs a{
+        font-size: $f-s-20;
+        border-bottom: 1px solid $dark;
+        padding-bottom: 5px;
+        font-weight: $f-w-600;
+        &:hover{
+            color: $base-color !important;
+            border-bottom: 1px solid $base-color;
+        }
+    }
+}
